@@ -1,0 +1,9 @@
+- name: Get Existing Syslog Servers
+  eos_command:
+    commands: "sh run | i logging"
+  register: current_syslog
+
+- name: Configure Arista Syslog Servers
+  eos_config:
+    src: templates/eos_syslog.j2
+    save_when: changed
