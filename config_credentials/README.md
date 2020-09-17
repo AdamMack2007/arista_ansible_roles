@@ -18,7 +18,3 @@ Used to configure local credentials. The option to purge all accounts that are n
     - config_credentials
 
 ```
-
-## License
-
-BSD

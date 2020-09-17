@@ -22,7 +22,3 @@ Has the option to generate tacacs keys or to accept existing keys. If the keys d
     - config_aaa
 
 ```
-
-## License
-
-BSD
