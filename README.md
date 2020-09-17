@@ -4,10 +4,11 @@ Ansible network roles to perform a base configuration of Arista EOS devices
 
 ## Usage
 
+Any role with config_* will make configuration changes to the device.
+
 Role name and functions:
 
 - **config_aaa**: Configure authentication/authorization settings on devices.
-- **config_acl**: Create/update management ACLs.
 - **config_credentials**: Update user credentials for local accounts
 - **config_dns**: Configures DNS servers
 - **config_ntp**: Configures NTP servers
@@ -44,14 +45,13 @@ Include all roles to build the entire base configuration
   roles:
     - facts
     - config_provisioning
-    - config_acl
     - config_dns
     - config_ntp
     - config_snmp
     - config_syslog
-    - config_save
     - config_credentials
     - config_aaa
+    - config_save
 ```
 
 ## Recommendations
