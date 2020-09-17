@@ -1,9 +1,10 @@
 galaxy_info:
   author: Adam Mack
-  description: Configure misc base settings (hostnames, nxos features, etc) for network devices
+  description: Configure misc base settings (hostnames, login banner, etc) for network devices
   company: Red Hat
   license: "license (BSD, MIT)"
   min_ansible_version: 2.7
   galaxy_tags:
     - network
     - arista
+    - eos
