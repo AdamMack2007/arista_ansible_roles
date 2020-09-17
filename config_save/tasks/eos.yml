@@ -1,0 +1,3 @@
+- name: Save Configuration
+  eos_config:
+    save_when: always
