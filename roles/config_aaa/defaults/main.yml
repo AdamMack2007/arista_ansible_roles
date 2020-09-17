@@ -1,0 +1,10 @@
+aaa_servers:
+  - 1.1.1.1
+  - 1.1.1.2
+
+aaa_group_name: TACACS
+
+aaa_key: ""
+
+#Tells Ansible whether to generate a tacacs key if aaa_key is not defined
+aaa_create_key: no

@@ -1,0 +1,3 @@
+---
+#Set to yes to purge all local user accounts except "admin" from the devices
+purge_users: no

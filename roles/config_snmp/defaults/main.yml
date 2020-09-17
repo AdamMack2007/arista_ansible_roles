@@ -1,0 +1,12 @@
+snmp_servers:
+  - 192.168.10.152
+
+#VRF to use for SNMP. If empty it will not put the SNMP servers in a VRF
+snmp_vrf: "management"
+
+#Name of SNMP group to configure on device.
+snmp_group: "SNMP_V3"
+
+#Recommended to vault these credentials.
+snmp_user: ""
+snmp_password: ""

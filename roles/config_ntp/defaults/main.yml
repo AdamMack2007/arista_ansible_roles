@@ -1,0 +1,7 @@
+ntp_servers:
+  - 132.163.96.5
+  - 132.163.97.5
+
+ntp_vrf: management
+
+enforce_compliance: no

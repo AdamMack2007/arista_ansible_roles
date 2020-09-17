@@ -1,0 +1,3 @@
+---
+- name: "Include AAA Tasks"
+  include_tasks: "{{ ansible_network_os }}.yml"

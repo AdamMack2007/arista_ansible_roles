@@ -1,0 +1,9 @@
+- name: Get Existing Arista NTP Servers
+  eos_command:
+    commands: "show run | i ntp server"
+  register: current_ntp
+
+- name: Configure Arista NTP Servers
+  eos_config:
+    src: templates/eos_ntp.j2
+    save_when: changed

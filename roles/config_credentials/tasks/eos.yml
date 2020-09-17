@@ -1,0 +1,8 @@
+- name: Remove users and configure Admin password
+  eos_user:
+    configured_password: "{{ local_pass }}"
+    name: admin
+    purge: "{{ purge_users | default(no) }}"
+    state: present
+    privilege: 15
+  when: global_pass is defined
