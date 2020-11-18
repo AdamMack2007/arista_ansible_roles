@@ -5,4 +5,4 @@
     purge: "{{ purge_users | default(no) }}"
     state: present
     privilege: 15
-  when: global_pass is defined
+  when: local_pass is defined
